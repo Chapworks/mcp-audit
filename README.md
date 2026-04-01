@@ -14,18 +14,26 @@ These skills fix that.
 
 ## Install
 
-Copy both skill files to your Claude Code commands directory:
+One command:
 
 ```bash
-# Global install (works in all projects)
-mkdir -p ~/.claude/commands
-cp audit-tools.md wrong-tool.md ~/.claude/commands/
+curl -fsSL https://raw.githubusercontent.com/Chapworks/mcp-audit/main/install.sh | bash
 ```
 
-Or for a single project:
+This installs globally to `~/.claude/commands/` (works in all projects).
+
+For a single project only:
 
 ```bash
-cp audit-tools.md wrong-tool.md .claude/commands/
+curl -fsSL https://raw.githubusercontent.com/Chapworks/mcp-audit/main/install.sh | bash -s -- --project
+```
+
+Or clone and run locally:
+
+```bash
+git clone https://github.com/Chapworks/mcp-audit.git
+cd mcp-audit
+./install.sh
 ```
 
 ## Usage
