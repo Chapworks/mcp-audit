@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# mcp-audit installer
+# tool-audit installer
 # Installs audit-tools and wrong-tool skills for Claude Code
 
-REPO="https://raw.githubusercontent.com/Chapworks/mcp-audit/main"
+REPO="https://raw.githubusercontent.com/Chapworks/tool-audit/main"
 SKILLS=("audit-tools.md" "wrong-tool.md")
 
 # Determine install location

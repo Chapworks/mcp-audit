@@ -1,4 +1,4 @@
-# mcp-audit
+# tool-audit
 
 Two Claude Code skills that detect and fix tool conflicts across MCP servers.
 
@@ -17,7 +17,7 @@ These skills fix that.
 One command:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Chapworks/mcp-audit/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/Chapworks/tool-audit/main/install.sh | bash
 ```
 
 This installs globally to `~/.claude/commands/` (works in all projects).
@@ -25,14 +25,14 @@ This installs globally to `~/.claude/commands/` (works in all projects).
 For a single project only:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Chapworks/mcp-audit/main/install.sh | bash -s -- --project
+curl -fsSL https://raw.githubusercontent.com/Chapworks/tool-audit/main/install.sh | bash -s -- --project
 ```
 
 Or clone and run locally:
 
 ```bash
-git clone https://github.com/Chapworks/mcp-audit.git
-cd mcp-audit
+git clone https://github.com/Chapworks/tool-audit.git
+cd tool-audit
 ./install.sh
 ```
 
